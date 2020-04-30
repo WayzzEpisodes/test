@@ -1,10 +1,6 @@
-<script>
-    var detect = function(base, if_installed, if_not_installed) {
-        var s = document.createElement('script');
-        s.onerror = if_not_installed;
-        s.onload = if_installed;
-        document.body.appendChild(s);
-        s.src = base + '/manifest.json';
-    }
-    detect('chrome-extension://iheobagjkfklnlikgihanlhcddjoihkg', function() {alert('boom!');});
-</script>
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+<script src="https://mediaelements.github.io/quality/quality.js"></script>
+</body>
+</html>
